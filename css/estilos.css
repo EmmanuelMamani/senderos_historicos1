@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Rofane'; /* Nombre de la fuente personalizada */
+    src: url('../fuente/Rofane.woff') format('woff'), /* Ruta a tu archivo WOFF2 */
+  }
+  
+  body {
+    font-family: 'Rofane', sans-serif; /* Usa la fuente personalizada en el cuerpo del documento */
+    width: 100%;
+}
+header{
+    background-color: #14213D;
+    color: #ffffff;
+    display: flex;
+    padding: 5%;
+    width: 100%;
+}
+#titulo{
+    padding-left: 5%;
+    width: 85%;
+}
+#opciones{
+    background-color: #14213D;
+    color: #ffffff;
+    width: 20%;
+    padding: 2%;
+    position: absolute;
+    left: 80%;
+    display: none;
+    padding-bottom: 2%;
+}
+#opciones>a{
+    margin-top: 10%; 
+    display: block;
+    padding-left: 30%;
+}
+.portada{
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    margin-left: 10vw;
+}
+#video{
+    width: 100%;
+}
+article{
+    padding: 5%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+article>h2{
+ color: #FCA311;
+ text-align: center;
+}
+article>p{
+    text-align: justify;
+}
