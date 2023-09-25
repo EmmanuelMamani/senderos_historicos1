@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">Senderos historicos</div>
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html"><img src="img/home.svg"></a>
+        <a href="#"><img src="img/galeria.svg"></a>
+        <a href="#"><img src="img/ubicacion.svg"></a>
+        <a href="#"><img src="img/info.svg"></a>
+    </div>
+    <main>
+        <div id="map" style="height: 400px;"></div>
+    </main>
+</body>
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick=function(){
+        if(opciones.style.display== 'block'){
+            opciones.style.display = 'none'
+        }else{
+            opciones.style.display= 'block'
+        }
+    }
+
+    var mymap = L.map('map').setView([51.5074, -0.1278], 15); // Cambia las coordenadas y el nivel de zoom
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+    L.marker([51.5074, -0.1278]).addTo(mymap).bindPopup('Mi Ubicación').openPopup(); // Cambia las coordenadas y el mensaje del marcador
+
+</script>
+</html>
