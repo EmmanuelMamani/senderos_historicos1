@@ -1,24 +1,23 @@
-@font-face {
-    font-family: 'Rofane'; /* Nombre de la fuente personalizada */
-    src: url('../fuente/Rofane.woff') format('woff'), /* Ruta a tu archivo WOFF2 */
-  }
-  
-  body {
-    font-family: 'Rofane', sans-serif; /* Usa la fuente personalizada en el cuerpo del documento */
+body {
     width: 100%;
 }
-header{
+
+header {
     background-color: #14213D;
     color: #ffffff;
     display: flex;
     padding: 5%;
     width: 100%;
+    position: relative; /* Agregamos posición relativa al encabezado */
+    z-index: 1; /* Ajusta el z-index según tus necesidades */
 }
-#titulo{
+
+#titulo {
     padding-left: 5%;
     width: 85%;
 }
-#opciones{
+
+#opciones {
     background-color: #14213D;
     color: #ffffff;
     width: 20%;
@@ -27,11 +26,15 @@ header{
     left: 80%;
     display: none;
     padding-bottom: 2%;
+    z-index: 2; /* Ajusta el z-index para que esté por encima del video */
 }
 #opciones>a{
     margin-top: 10%; 
     display: block;
-    padding-left: 30%;
+    width: 100%;
+}
+.icono{
+    width: 50px;
 }
 .portada{
     width: 70vw;
@@ -41,6 +44,7 @@ header{
 }
 #video{
     width: 100%;
+    z-index: 0; 
 }
 article{
     padding: 5%;
@@ -53,4 +57,29 @@ article>h2{
 }
 article>p{
     text-align: justify;
+}
+h2{
+    color: #FCA311;
+    text-align: center;
+}
+#contenido{
+    margin:5%;
+    width: 90%;
+}
+main{
+    padding-bottom: 5%;
+}
+footer{
+    background-color: #14213D;
+    color: #ffffff;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+}
+#map {
+    height: 400px;
+    z-index: 0; /* Ajusta el z-index según tus necesidades */
+}
+#imagen{
+    width: 100px;
 }

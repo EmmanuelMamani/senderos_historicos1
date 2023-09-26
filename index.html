@@ -13,33 +13,38 @@
         <div id="menu"><img src="img/menu.svg"></div>
     </header>
     <div id="opciones">
-        <a href="#"><img src="img/home.svg"></a>
-        <a href="#"><img src="img/galeria.svg"></a>
-        <a href="ubicacion.html"><img src="img/ubicacion.svg"></a>
-        <a href="#"><img src="img/info.svg"></a>
+        <a href="index.html"><img class="icono" src="img/home.svg"></a>
+        <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+        <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+        <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
     </div>
     <main>
-        <iframe id="video" height="250" src="https://www.youtube.com/embed/StQmNi_edIo" title="FANTASMAS  CEMENTERIO DE COCHABAMBA - BOLIVIA  #altomisterio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-container">
+            <iframe id="video" height="250" src="https://www.youtube.com/embed/StQmNi_edIo" title="FANTASMAS  CEMENTERIO DE COCHABAMBA - BOLIVIA  #altomisterio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <article>
             <img src="img/cementerio.jpg" class="portada">
-            <h2 class="text-2xl">Cementerio de cochabamba</h2>
+            <h2 class="text-2xl">Cementerio de Cochabamba</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea dolor nam dolorum blanditiis est reprehenderit sequi quis ullam totam, distinctio ipsum accusamus tenetur obcaecati. Tenetur, ea quasi. Culpa, blanditiis!</p>
         </article>
         <article>
             <img src="img/cementerio.jpg" class="portada">
-            <h2 class="text-2xl">Cementerio de cochabamba</h2>
+            <h2 class="text-2xl">Cementerio de Cochabamba</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea dolor nam dolorum blanditiis est reprehenderit sequi quis ullam totam, distinctio ipsum accusamus tenetur obcaecati. Tenetur, ea quasi. Culpa, blanditiis!</p>
         </article>
     </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
 </body>
 <script>
     var menu = document.getElementById('menu')
     var opciones = document.getElementById('opciones')
-    menu.onclick=function(){
-        if(opciones.style.display== 'block'){
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
             opciones.style.display = 'none'
-        }else{
-            opciones.style.display= 'block'
+        } else {
+            opciones.style.display = 'block'
         }
     }
 </script>

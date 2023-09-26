@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluye los archivos de Fancybox desde los CDNs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+    <header>
+        <div id="titulo">Senderos historicos</div>
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html"><img class="icono" src="img/home.svg"></a>
+        <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+        <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+        <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
+    </div>
+    <main>
+        <h2 class="text-2xl">Galería de imágenes 360°</h2>
+        <a href="img1.html"><img src="img/prueba.jpg"></a>
+        <h2 class="text-2xl">Galería de imágenes</h2>
+        <a data-fancybox="gallery" href="img/prueba.jpg"><img src="img/prueba.jpg"></a>
+        <a data-fancybox="gallery" href="img/prueba.jpg"><img src="img/prueba.jpg"></a>
+        <a data-fancybox="gallery" href="img/prueba.jpg"><img src="img/prueba.jpg"></a>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+    
+    <!-- Incluye el archivo JavaScript de Fancybox al final de tu página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+    <!-- Inicializa Fancybox -->
+    <script>
+        $(document).ready(function() {
+            $("[data-fancybox]").fancybox();
+        });
+        var menu = document.getElementById('menu')
+        var opciones = document.getElementById('opciones')
+        menu.onclick=function(){
+            if(opciones.style.display== 'block'){
+                opciones.style.display = 'none'
+            }else{
+                opciones.style.display= 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">Senderos historicos</div>
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html"><img class="icono" src="img/home.svg"></a>
+        <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+        <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+        <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
+    </div>
+    <main>
+       <img src="img/cementerio.jpg" alt="">
+       <article>
+            <h2 class="text-2xl">Recorrido historico</h2>
+            <div class="grid grid-cols-2">
+                <div>
+                    <img src="img/run.svg" width="100" class="ml-5">
+                    <h2>Icono 1</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="ml-5">
+                    <h2>Icono 1</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="ml-5">
+                    <h2>Icono 1</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="ml-5">
+                    <h2>Icono 1</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+            </div>
+       </article>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+</body>
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
+            opciones.style.display = 'none'
+        } else {
+            opciones.style.display = 'block'
+        }
+    }
+</script>
+</html>
